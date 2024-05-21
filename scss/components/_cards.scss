@@ -1,0 +1,82 @@
+@use "../abstracts/mixins" as *;
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 8px;
+
+    &:not(:last-of-type) {
+        margin-bottom: 2rem;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--color-very-dark-cyan);
+    }
+
+    &__text {
+        font-size: 14px;
+        color: var(--color-grayish-blue);
+        margin-bottom: 0;
+    }
+
+    &--pre-footer {
+        display: block;
+        margin-bottom: -110px;
+        max-width: 90%;
+        margin-inline: auto;
+        text-align: center;
+
+        &__text {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 1.4rem;
+        }
+    }
+}
+
+@include mediaQuery {
+    .card {
+        flex-wrap: nowrap;
+        align-items: center;
+        padding-inline: 6rem 2rem;
+        text-align: left;
+
+        &__image,
+        &__content {
+            flex: 1 1 50%;
+        }
+
+        &:nth-child(odd) {
+            .card__image {
+                text-align: right;
+                order: 2;
+            }
+        }
+
+        &--pre-footer {
+            padding: 2rem;
+            text-align: center;
+            width: 60%;
+
+            &__text {
+                font-size: 1.4rem;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+@include mediaQuery(991px) {
+    .card {
+        &--pre-footer {
+            width: 35%;
+        }
+    }
+}

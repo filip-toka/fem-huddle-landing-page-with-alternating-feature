@@ -1,0 +1,22 @@
+@use "../abstracts/mixins" as *;
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 1rem;
+
+    &__logo {
+        width: 120px;
+    }
+}
+
+@include mediaQuery(991px) {
+    .navbar {
+        padding-top: 2rem;
+
+        &__logo {
+            width: 180px;
+        }
+    }
+}
