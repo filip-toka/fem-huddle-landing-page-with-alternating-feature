@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://github.com/filip-toka/fem-huddle-landing-page-with-alternating-feature-blocks)
-- Live Site URL: [Live site URL](https://filip-toka.github.io/fem-huddle-landing-page-with-alternating-feature-blocks)
+- Solution URL: [Solution URL](https://github.com/filip-toka/fem-huddle-landing-page-with-alternating-feature)
+- Live Site URL: [Live site URL](https://filip-toka.github.io/fem-huddle-landing-page-with-alternating-feature)
 
 ## My process
 
